@@ -122,38 +122,38 @@ export default function Home() {
       <section className="section steps">
         <div className="wrap-wide">
           <div className="head">
-            <p className="eyebrow">Ways to begin</p>
-            <h2 className="h2 measure">Pick one. There's a place for everyone.</h2>
+            <p className="eyebrow">Easy first steps</p>
+            <h2 className="h2 measure">Pick one. There's no wrong door.</h2>
           </div>
           <div className="doors">
             <div className="door">
-              <div className="ph pic" style={{ aspectRatio: '4/3', borderRadius: 0 }}><span className="cap">placeholder · on-site class</span></div>
+              <div className="ph pic" style={{ aspectRatio: '4/3', borderRadius: 0 }}><span className="cap">placeholder · weekly circle</span></div>
               <div className="body">
-                <p className="tag">Enroll on-site</p>
-                <h3>Study at the Institute</h3>
-                <p>Structured, on-site programs — AISL, AQS, ISD, Quranic Arabic and more — for students and working professionals.</p>
-                <p className="meta">DHA &amp; UMT, Lahore · registrations open</p>
-                <Link className="go" to="/courses">See all courses →</Link>
+                <p className="tag">Come this week</p>
+                <h3>Walk into a gathering</h3>
+                <p>Drop in to a free weekly circle. No sign-up, no dress code, no quiz. Just show up and sit with people who get it.</p>
+                <p className="meta">Lahore · every Tue &amp; Wed · free</p>
+                <Link className="go" to="/community">Find one near me →</Link>
               </div>
             </div>
             <div className="door">
-              <div className="ph pic" style={{ aspectRatio: '4/3', borderRadius: 0 }}><span className="cap">placeholder · Naseeha X</span></div>
+              <div className="ph pic" style={{ aspectRatio: '4/3', borderRadius: 0 }}><span className="cap">placeholder · NaseehaX</span></div>
               <div className="body">
-                <p className="tag">Learn online</p>
-                <h3>Take a Naseeha X course</h3>
-                <p>Online courses you can start today and go at your own pace, from anywhere in the world.</p>
-                <p className="meta">courses.naseeha.live</p>
-                <a className="go" href={SITE.naseehaX} target="_blank" rel="noreferrer">Browse Naseeha X →</a>
+                <p className="tag">Start online, today</p>
+                <h3>Take a course</h3>
+                <p>Structured programs for every level — from the 4-year AISL to short intensives — on-site in Lahore, plus self-paced courses online via Naseeha X. No prior knowledge needed.</p>
+                <p className="meta">AISL · AQS · ISD · Quranic Arabic · Naseeha X</p>
+                <Link className="go" to="/courses">Browse courses →</Link>
               </div>
             </div>
             <div className="door">
-              <div className="ph pic" style={{ aspectRatio: '4/3', borderRadius: 0 }}><span className="cap">placeholder · WSG</span></div>
+              <div className="ph pic" style={{ aspectRatio: '4/3', borderRadius: 0 }}><span className="cap">placeholder · online community</span></div>
               <div className="body">
-                <p className="tag">Come along</p>
-                <h3>Join a Weekly Gathering</h3>
-                <p>Talks on contemporary issues in the light of the Quran and Sunnah — open to people from every walk of life.</p>
-                <p className="meta">Tue &amp; Wed · DHA Phase 3 &amp; Wapda Town</p>
-                <Link className="go" to="/community">Get involved →</Link>
+                <p className="tag">Just follow along</p>
+                <h3>Sit with us online</h3>
+                <p>Not ready for a room yet? Follow the community and learn in small pieces, wherever you are in the world.</p>
+                <p className="meta">175,000+ already here</p>
+                <Link className="go" to="/community">Join the community →</Link>
               </div>
             </div>
           </div>
@@ -179,12 +179,12 @@ export default function Home() {
         <div className="wrap">
           <p className="eyebrow" style={{ textAlign: 'center', marginBottom: '48px' }}>A community that's actually showing up</p>
           <div className="row">
-            <div className="stat"><div className="n"><span>5</span></div><div className="l">structured on-site courses (+ Naseeha X online)</div></div>
-            <div className="stat"><div className="n">4<span className="o">yr</span></div><div className="l">flagship AISL · 8 semesters</div></div>
-            <div className="stat"><div className="n">19<span className="o">+</span></div><div className="l">volunteer scholars &amp; teachers</div></div>
-            <div className="stat"><div className="n">100<span className="o">%</span></div><div className="l">non-profit &amp; non-political</div></div>
+            <div className="stat"><div className="n"><span>94</span></div><div className="l">students in the Institute (AISL)</div></div>
+            <div className="stat"><div className="n"><span>31</span></div><div className="l">campuses reached</div></div>
+            <div className="stat"><div className="n"><span>12,000+</span></div><div className="l">attendees through the door</div></div>
+            <div className="stat"><div className="n">4.9<span className="o">/5</span></div><div className="l">from 200+ NaseehaX reviews</div></div>
           </div>
-          <p className="note">AISL · AQS · ISD · Quranic Arabic Intensive · Summer Qur'an Enrichment · Naseeha X online</p>
+          <p className="note">140+ events a year · 7,000+ annual dawah participants · 95% course completion</p>
         </div>
       </section>
 
