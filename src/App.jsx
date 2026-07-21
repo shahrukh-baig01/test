@@ -20,23 +20,24 @@ function MqCard({ label, cap }) {
   )
 }
 
+/* Real Naseeha offerings (from naseeha.live). */
 const rowA = [
-  ['Weekly gatherings', 'placeholder · weekly gathering'],
-  ['Retreats & camps', 'placeholder · retreat'],
-  ['The Institute', 'placeholder · AISL class'],
-  ['Quest · for teens', 'placeholder · teens'],
-  ['31 campuses', 'placeholder · campus'],
+  ['Islamic Studies & Leadership (AISL)', 'placeholder · AISL cohort'],
+  ['Associate of Quranic Studies (AQS)', 'placeholder · AQS, Saturdays'],
+  ['Islamic Studies Diploma (ISD)', 'placeholder · ISD class'],
+  ['Quranic Arabic Intensive', 'placeholder · Arabic intensive'],
+  ["Summer Qur'an Enrichment", 'placeholder · summer program'],
 ]
 const rowB = [
-  ["Malja · women's wing", 'placeholder · Malja'],
-  ['NaseehaX · online', 'placeholder · NaseehaX'],
-  ['140+ events a year', 'placeholder · event'],
-  ['Food & friends', 'placeholder · after gathering'],
-  ['Open questions', 'placeholder · talk'],
+  ['Naseeha X · online courses', 'placeholder · online learning'],
+  ['Weekly Spiritual Gathering', 'placeholder · WSG talk'],
+  ['The NCCM Project', 'placeholder · NCCM'],
+  ['Events & retreats', 'placeholder · Naseeha event'],
+  ['Community', 'placeholder · community'],
 ]
 const words = [
-  'Weekly gatherings', 'NaseehaX courses', 'Quest for teens',
-  'The Institute', 'Malja for women', 'Retreats & camps',
+  'AISL', 'AQS', 'ISD', 'Quranic Arabic', "Summer Qur'an",
+  'Naseeha X', 'Weekly Spiritual Gathering',
 ]
 
 export default function App() {
@@ -83,11 +84,11 @@ export default function App() {
         <div className="wrap-wide row">
           <div className="logo">Naseeha</div>
           <div className="links">
-            <a href="#energy">Community</a>
-            <a href="#steps">Start</a>
-            <a href="#diff">Why us</a>
-            <a href="#proof">Programs</a>
-            <a className="btn btn-primary navcta" href="#steps">Find your people</a>
+            <a href="#courses">Courses</a>
+            <a href="#community">Community</a>
+            <a href="#about">Who we are</a>
+            <a href="#programs">Programs</a>
+            <a className="btn btn-primary navcta" href="#invite">Donate</a>
           </div>
           <button className="burger" aria-label="Menu"><span></span><span></span><span></span></button>
         </div>
@@ -100,41 +101,41 @@ export default function App() {
         </div>
         <div className="glow" id="heroGlow"></div>
         <div className="wrap-wide inner">
-          <span className="kicker"><span className="pulse"></span> A community for young Muslims · Lahore &amp; online</span>
-          <h1 className="display">Belong first.<span className="em">The rest follows.</span></h1>
-          <p className="sub">Before the rules, before the labels — there's a room full of people who get it. Naseeha is where young Pakistani Muslims find their people, then find their way. Come exactly as you are.</p>
+          <span className="kicker"><span className="pulse"></span> A non-profit Islamic educational institute · DHA, Lahore</span>
+          <h1 className="display">Journey to<span className="em">excellence.</span></h1>
+          <p className="sub">Naseeha Institute revives Islamic learning and scholarship — bringing the study of the Quran and the Prophetic Sunnah to students and working professionals in an institutionalized setting.</p>
           <div className="cta">
-            <a className="btn btn-primary btn-lg" href="#steps">Find your people <span className="arrow">→</span></a>
-            <a className="btn btn-ghost-light btn-lg" href="#energy">See what a week looks like</a>
+            <a className="btn btn-primary btn-lg" href="#courses">Explore courses <span className="arrow">→</span></a>
+            <a className="btn btn-ghost-light btn-lg" href="#community">Weekly gatherings</a>
           </div>
-          <p className="micro">Free weekly gatherings · 31 campuses · 175,000+ online. No sign-up. No judgment.</p>
+          <p className="micro">AISL · AQS · ISD · Quranic Arabic · Summer Qur'an · Naseeha X online. Registrations open.</p>
         </div>
-        <span className="cap">placeholder · a Tuesday-night gathering, Lahore</span>
+        <span className="cap">placeholder · Naseeha Institute, DHA Lahore</span>
         <div className="scrollhint">Scroll</div>
       </header>
 
       {/* 2 · OPENER */}
       <section className="section opener">
         <div className="wrap">
-          <p className="eyebrow" style={{ marginBottom: '28px' }}>You don't have to have it figured out</p>
-          <h2 className="big">Most people don't walk in <span className="o">believing.</span> They walk in <span className="o">belonging.</span></h2>
-          <p className="lede">Conviction grows in a room where you feel safe — not from a lecture you sat through alone. So we start with the part that's easy: showing up, and being welcome.</p>
+          <p className="eyebrow" style={{ marginBottom: '28px' }}>Reviving Islamic learning</p>
+          <h2 className="big">Islamic scholarship, brought back to <span className="o">the masses.</span></h2>
+          <p className="lede">A non-profit, non-political educational institute dedicated to the study of the Quran and the Prophetic Sunnah — taught seriously, and made accessible to everyone.</p>
         </div>
       </section>
 
       {/* 3 · COMMUNITY ENERGY + MARQUEE */}
-      <section className="section energy" id="energy">
+      <section className="section energy" id="community">
         <div className="wrap-wide">
           <div className="head">
             <div>
-              <p className="eyebrow" style={{ color: 'var(--gold-300)', marginBottom: '16px' }}>This is what a week feels like</p>
+              <p className="eyebrow" style={{ color: 'var(--gold-300)', marginBottom: '16px' }}>What's happening at Naseeha</p>
               <h2 className="h2 measure">A whole community, already in motion.</h2>
             </div>
-            <p className="lede">Circles after class. Camps in the mountains. A thread you scroll at 1am. Friends who text back. It's louder, warmer and closer than you'd expect.</p>
+            <p className="lede">Structured courses and diplomas. Weekly Spiritual Gatherings. Online learning through Naseeha X. Events, the NCCM project and a growing community — on-site in Lahore and online.</p>
           </div>
         </div>
 
-        {/* image marquee (two rows, opposite directions) */}
+        {/* offering marquee (two rows, opposite directions) */}
         <div className="marquee">
           <div className="mq-track">
             <div className="mq-row" id="mqA">
@@ -166,128 +167,127 @@ export default function App() {
           <div className="ph" style={{ width: '100%', height: '100%', borderRadius: 0 }} />
         </div>
         <div className="wrap-wide inner">
-          <p className="big">The first time, you just <span className="o">sit and listen.</span> By the third, someone saves you a seat.</p>
-          <p>That's how it starts for most people — no commitment, no quiz, no pressure. You come once to see what it feels like, and the room does the rest.</p>
+          <p className="big">Weekly Spiritual Gatherings — <span className="o">for every walk of life.</span></p>
+          <p>A series of talks addressing contemporary issues in the light of the Quran and Sunnah — a platform for people from all backgrounds to understand the basics of Islam.</p>
         </div>
-        <span className="cap">placeholder · the circle, after class</span>
+        <span className="cap">placeholder · Weekly Spiritual Gathering</span>
       </section>
 
-      {/* 5 · LAYERED PARALLAX STATEMENT */}
+      {/* 5 · LAYERED STATEMENT — WHO WE ARE */}
       <section className="section layered">
         <div className="wrap-wide">
           <div className="grid">
             <div className="stack">
               <div className="p-back" id="pBack">
-                <Ph cap="placeholder · the room" style={{ width: '100%', height: '100%' }} />
+                <Ph cap="placeholder · the campus, DHA" style={{ width: '100%', height: '100%' }} />
               </div>
               <div className="p-front" id="pFront">
-                <Ph cap="placeholder · a new face, welcomed" style={{ width: '100%', height: '100%' }} />
+                <Ph cap="placeholder · a class in session" style={{ width: '100%', height: '100%' }} />
               </div>
             </div>
             <div className="copy">
-              <p className="eyebrow" style={{ marginBottom: '20px' }}>Come as you are</p>
-              <p className="big">No one's keeping score of how <span className="o">practicing</span> you are.</p>
-              <p>Maybe it's been a while. Maybe the mosque never quite felt like yours. Maybe you carry more questions than answers. That's exactly who we built this for — roots before rules, belonging before behavior.</p>
-              <p style={{ marginTop: '18px' }}><a className="btn btn-ghost btn-lg" href="#steps">Take one small step <span className="arrow">→</span></a></p>
+              <p className="eyebrow" style={{ marginBottom: '20px' }}>Who we are</p>
+              <p className="big">A place to study the Quran and Sunnah, <span className="o">seriously.</span></p>
+              <p>Naseeha Institute is a non-profit and non-political educational institute dedicated to reviving Islamic learning and scholarship among the masses — in an institutionalized setting built for students and working professionals alike.</p>
+              <p style={{ marginTop: '18px' }}><a className="btn btn-ghost btn-lg" href="#about">Who we are <span className="arrow">→</span></a></p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 6 · FIRST STEPS */}
-      <section className="section steps" id="steps">
+      {/* 6 · FIRST STEPS — WAYS IN */}
+      <section className="section steps" id="courses">
         <div className="wrap-wide">
           <div className="head">
-            <p className="eyebrow">Easy first steps</p>
-            <h2 className="h2 measure">Pick one. There's no wrong door.</h2>
+            <p className="eyebrow">Ways to begin</p>
+            <h2 className="h2 measure">Pick one. There's a place for everyone.</h2>
           </div>
           <div className="doors">
             <div className="door">
-              <div className="ph pic" style={{ aspectRatio: '4/3', borderRadius: 0 }}><span className="cap">placeholder · weekly circle</span></div>
+              <div className="ph pic" style={{ aspectRatio: '4/3', borderRadius: 0 }}><span className="cap">placeholder · on-site class</span></div>
               <div className="body">
-                <p className="tag">Come this week</p>
-                <h3>Walk into a gathering</h3>
-                <p>Drop in to a free weekly circle. No sign-up, no dress code, no quiz. Just show up and sit with people who get it.</p>
-                <p className="meta">Lahore · every Tue &amp; Wed · free</p>
-                <span className="go">Find one near me →</span>
+                <p className="tag">Enroll on-site</p>
+                <h3>Study at the Institute</h3>
+                <p>Structured, on-site programs — AISL, AQS, ISD, Quranic Arabic and more — for students and working professionals.</p>
+                <p className="meta">DHA, Lahore · registrations open</p>
+                <span className="go">See all courses →</span>
               </div>
             </div>
             <div className="door">
-              <div className="ph pic" style={{ aspectRatio: '4/3', borderRadius: 0 }}><span className="cap">placeholder · NaseehaX</span></div>
+              <div className="ph pic" style={{ aspectRatio: '4/3', borderRadius: 0 }}><span className="cap">placeholder · Naseeha X</span></div>
               <div className="body">
-                <p className="tag">Start online, today</p>
-                <h3>Take a short course</h3>
-                <p>Bite-size courses built for total beginners. No prior knowledge, no Arabic, no pressure. Go at your own pace, from anywhere.</p>
-                <p className="meta">4.9/5 · 500+ learners · 10+ courses</p>
-                <span className="go">Browse courses →</span>
+                <p className="tag">Learn online</p>
+                <h3>Take a Naseeha X course</h3>
+                <p>Online courses you can start today and go at your own pace, from anywhere in the world.</p>
+                <p className="meta">courses.naseeha.live</p>
+                <span className="go">Browse Naseeha X →</span>
               </div>
             </div>
             <div className="door">
-              <div className="ph pic" style={{ aspectRatio: '4/3', borderRadius: 0 }}><span className="cap">placeholder · online community</span></div>
+              <div className="ph pic" style={{ aspectRatio: '4/3', borderRadius: 0 }}><span className="cap">placeholder · WSG</span></div>
               <div className="body">
-                <p className="tag">Just follow along</p>
-                <h3>Sit with us online</h3>
-                <p>Not ready for a room yet? Follow the community and learn in small pieces, wherever you are in the world.</p>
-                <p className="meta">175,000+ already here</p>
-                <span className="go">Join the community →</span>
+                <p className="tag">Come along</p>
+                <h3>Join a Weekly Gathering</h3>
+                <p>Talks on contemporary issues in the light of the Quran and Sunnah — open to people from every walk of life.</p>
+                <p className="meta">Weekly · join the WhatsApp group</p>
+                <span className="go">Get involved →</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 7 · WHY DIFFERENT */}
-      <section className="section diff" id="diff">
+      {/* 7 · WHY DIFFERENT — ABOUT */}
+      <section className="section diff" id="about">
         <div className="wrap-wide">
-          <h2 className="h2 measure">We're not here to lecture you.</h2>
-          <p className="lede measure" style={{ marginTop: '20px' }}>Naseeha was built by people who drifted too, and found their way back through community, not guilt. We understand both worlds because we've lived both worlds.</p>
+          <h2 className="h2 measure">Learning with structure and depth.</h2>
+          <p className="lede measure" style={{ marginTop: '20px' }}>Naseeha isn't one-off lectures. It's real curricula, taught in an institutionalized setting, tracing everything back to the Quran and the Prophetic Sunnah.</p>
           <div className="grid">
-            <div className="item"><div className="idx">i.</div><h3>Belonging before behavior</h3><p>You're welcome before you've changed anything. We start with who you are, not a checklist of what you're missing.</p></div>
-            <div className="item"><div className="idx">ii.</div><h3>People who get your life</h3><p>Mentors with one foot in the modern world and one in classical scholarship. Nothing you ask will surprise them.</p></div>
-            <div className="item"><div className="idx">iii.</div><h3>Start anywhere</h3><p>No prior knowledge. No Arabic required. No "you should know this by now." You begin exactly where you are.</p></div>
-            <div className="item"><div className="idx">iv.</div><h3>You're not alone</h3><p>We keep showing up — every week, every season. This is a journey you walk with people, not an event you attend once.</p></div>
+            <div className="item"><div className="idx">i.</div><h3>Institutionalized learning</h3><p>Structured programs and semesters — from a four-year AISL to intensive short courses — not scattered, one-off talks.</p></div>
+            <div className="item"><div className="idx">ii.</div><h3>Quran &amp; Sunnah at the core</h3><p>Everything traces back to the Book and the Prophetic Sunnah, taught seriously and made accessible to all.</p></div>
+            <div className="item"><div className="idx">iii.</div><h3>Built for real lives</h3><p>Designed for students and working professionals — on-site classes in Lahore and self-paced learning online via Naseeha X.</p></div>
+            <div className="item"><div className="idx">iv.</div><h3>Non-profit &amp; transparent</h3><p>A non-profit, non-political foundation reviving Islamic scholarship — with published financial audit reports.</p></div>
           </div>
         </div>
       </section>
 
-      {/* 8 · PROOF */}
-      <section className="section proof" id="proof">
+      {/* 8 · PROOF — PROGRAMS AT A GLANCE */}
+      <section className="section proof" id="programs">
         <div className="wrap">
-          <p className="eyebrow" style={{ textAlign: 'center', marginBottom: '48px' }}>A community that's actually showing up</p>
+          <p className="eyebrow" style={{ textAlign: 'center', marginBottom: '48px' }}>Programs at a glance</p>
           <div className="row">
-            <div className="stat"><div className="n"><span>94</span></div><div className="l">students in the Institute (AISL)</div></div>
-            <div className="stat"><div className="n"><span>31</span></div><div className="l">campuses reached</div></div>
-            <div className="stat"><div className="n"><span>12,000+</span></div><div className="l">attendees through the door</div></div>
-            <div className="stat"><div className="n">4.9<span className="o">/5</span></div><div className="l">from 200+ NaseehaX reviews</div></div>
+            <div className="stat"><div className="n"><span>6</span></div><div className="l">structured courses on offer</div></div>
+            <div className="stat"><div className="n">4<span className="o">yr</span></div><div className="l">AISL · 8 semesters</div></div>
+            <div className="stat"><div className="n">2<span className="o">×</span></div><div className="l">campuses — DHA &amp; UMT</div></div>
+            <div className="stat"><div className="n">100<span className="o">%</span></div><div className="l">non-profit &amp; non-political</div></div>
           </div>
-          <p className="note">140+ events a year · 7,000+ annual dawah participants · 95% course completion</p>
+          <p className="note">AISL · AQS · ISD · Quranic Arabic Intensive · Summer Qur'an Enrichment · Naseeha X online</p>
         </div>
       </section>
 
-      {/* 9 · AYAH */}
+      {/* 9 · HADITH */}
       <section className="section ayah">
         <div className="wrap">
-          <p className="ar">يُرِيدُ ٱللَّهُ بِكُمُ ٱلْيُسْرَ وَلَا يُرِيدُ بِكُمُ ٱلْعُسْرَ</p>
-          <p className="en">“Allah intends for you ease, and does not intend for you hardship.”</p>
-          <p className="ref">Al-Baqarah · 2:185</p>
-          <p className="whisper">Faith was never meant to be heavy.</p>
+          <p className="en">“The best of charity is when a Muslim gains knowledge, then teaches it to his brother.”</p>
+          <p className="ref">Sunan Ibn Mājah</p>
+          <p className="whisper">Knowledge, then shared — that's the mission.</p>
         </div>
       </section>
 
       {/* 10 · INVITE */}
-      <section className="section invite">
+      <section className="section invite" id="invite">
         <div className="bg" id="inviteBg">
           <div className="ph" style={{ width: '100%', height: '100%', borderRadius: 0 }} />
         </div>
         <div className="wrap inner">
-          <h2>Your people are <span className="o">already here.</span></h2>
-          <p className="sub">Belong first. The rest follows.</p>
+          <h2>Begin your journey to <span className="o">excellence.</span></h2>
+          <p className="sub">Study, gather, and grow with Naseeha.</p>
           <div className="cta">
-            <a className="btn btn-primary btn-lg" href="#steps">Find your people <span className="arrow">→</span></a>
-            <a className="btn btn-ghost-light btn-lg" href="#steps">Start a free course</a>
+            <a className="btn btn-primary btn-lg" href="#courses">Explore courses <span className="arrow">→</span></a>
+            <a className="btn btn-ghost-light btn-lg" href="#invite">Donate now</a>
           </div>
         </div>
-        <span className="cap">placeholder · the room fills up</span>
+        <span className="cap">placeholder · Naseeha Institute, DHA</span>
       </section>
 
       {/* FOOTER */}
@@ -296,16 +296,16 @@ export default function App() {
           <div className="top">
             <div>
               <div className="logo">Naseeha</div>
-              <p className="tag">A community for young Muslims learning, growing and belonging — together. Built in Lahore, open to everyone.</p>
-              <a className="support" href="#">♥ Support the mission →</a>
+              <p className="tag">A non-profit, non-political Islamic educational institute in Lahore — reviving the study of the Quran and the Sunnah.</p>
+              <a className="support" href="#invite">♥ Donate now →</a>
             </div>
-            <div><h4>Start</h4><ul><li><a href="#">Weekly gatherings</a></li><li><a href="#">Online courses</a></li><li><a href="#">Events &amp; retreats</a></li><li><a href="#">Join the community</a></li></ul></div>
-            <div><h4>Learn</h4><ul><li><a href="#">The Institute (AISL)</a></li><li><a href="#">NaseehaX</a></li><li><a href="#">Quest (teens)</a></li><li><a href="#">Malja (women)</a></li></ul></div>
-            <div><h4>Naseeha</h4><ul><li><a href="#">Our story</a></li><li><a href="#">The NCCM project</a></li><li><a href="#">Support us</a></li><li><a href="#">Contact</a></li></ul></div>
+            <div><h4>Learn</h4><ul><li><a href="#courses">Courses</a></li><li><a href="#courses">AISL &amp; diplomas</a></li><li><a href="https://courses.naseeha.live">Naseeha X (online)</a></li><li><a href="#community">Weekly Gathering</a></li></ul></div>
+            <div><h4>Explore</h4><ul><li><a href="#">The NCCM Project</a></li><li><a href="#community">Events</a></li><li><a href="#community">Community</a></li><li><a href="#">Financial Audit Reports</a></li></ul></div>
+            <div><h4>Naseeha</h4><ul><li><a href="#about">Who we are</a></li><li><a href="mailto:info@naseeha.live">Contact</a></li><li><a href="#">Terms &amp; Conditions</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
           </div>
           <div className="legal">
-            <span>Naseeha Foundation · established 2023 · SECP Section 42 nonprofit · Lahore, Pakistan</span>
-            <span>info@naseeha.live</span>
+            <span>164-G, Civic Commercial Area, Phase 1 DHA, Lahore · info@naseeha.live · +92 311 6273342</span>
+            <span>© 2026 Naseeha Foundation. All rights reserved.</span>
           </div>
         </div>
       </footer>
