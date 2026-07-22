@@ -84,18 +84,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4 · FULL-BLEED BREAK */}
-      <section className="bleed">
-        <div className="bg" data-parallax="0.1">
-          <div className="ph" style={{ width: '100%', height: '100%', borderRadius: 0 }} />
-        </div>
-        <div className="wrap-wide inner">
-          <p className="big">The first time, you just <span className="o">sit and listen.</span> By the third, someone saves you a seat.</p>
-          <p>That's how it starts for most people — no commitment, no quiz, no pressure. You come once to see what it feels like, and the community does the rest.</p>
-        </div>
-        <span className="cap">placeholder · the circle, after class</span>
-      </section>
-
       {/* 5 · LAYERED STATEMENT */}
       <section className="section layered">
         <div className="wrap-wide">
